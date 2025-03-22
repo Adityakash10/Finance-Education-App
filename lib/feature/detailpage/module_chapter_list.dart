@@ -1,10 +1,11 @@
+import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
 import 'package:educational_finance_app_for_teens/feature/detailpage/chapter_detail.dart';
 import 'package:flutter/material.dart';
 
 class ModuleChapterListPage extends StatelessWidget {
-  const ModuleChapterListPage({super.key, required this.chapters});
+  const ModuleChapterListPage({super.key, required this.module});
 
-  final List<String> chapters;
+  final Module module;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +27,7 @@ class ModuleChapterListPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Text(
-                'Credit Score',
+                module.title,
                 style: TextStyle(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
@@ -34,7 +35,7 @@ class ModuleChapterListPage extends StatelessWidget {
               ),
               SizedBox(height: 30),
               ListView.separated(
-                  itemCount: chapters.length,
+                  itemCount: module.chapters.length,
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
                   separatorBuilder: (context, index) =>
@@ -42,7 +43,7 @@ class ModuleChapterListPage extends StatelessWidget {
                   itemBuilder: (context, index) {
                     return ChapterCard(
                       color: gridColor[index],
-                      chapterTitle: chapters[index],
+                      chapter: module.chapters[index],
                     );
                   })
             ],
@@ -57,20 +58,24 @@ class ChapterCard extends StatelessWidget {
   const ChapterCard({
     super.key,
     required this.color,
-    required this.chapterTitle,
+    required this.chapter,
   });
 
   final Color color;
-  final String chapterTitle;
+  final Chapter chapter;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
-         Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) =>ChapterDetailPage()));
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => ChapterDetailPage(
+              data: chapter,
+            ),
+          ),
+        );
       },
       child: Container(
         height: 150,
@@ -94,8 +99,8 @@ class ChapterCard extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              chapterTitle,
-              style: TextStyle(
+              chapter.name,
+              style: const TextStyle(
                 fontSize: 20.0,
                 fontWeight: FontWeight.bold,
               ),

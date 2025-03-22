@@ -1,29 +1,48 @@
+import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
 import 'package:flutter/material.dart';
 
 class ChapterDetailPage extends StatelessWidget {
-  const ChapterDetailPage({super.key});
+  const ChapterDetailPage({super.key, required this.data});
+
+  final Chapter data;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('What is Credit'),
+        title: Text(data.name),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Container(
-              height: 200,
-              color: Colors.red,
-            ),
-            SizedBox(height: 20),
-            Text(
-              'A credit score is a number that shows how trustworthy you are when it comes to borrowing money. It ranges from 300 to 850, the higher the score, the more likely you are to get approved for loans or credit cards with good interest rates. Your score is based on your credit history, which includes things like how many accounts you have, how much debt you owe, and whether you have paid your bills on time',
-              style: TextStyle(fontSize: 16),
-            ),
-          ],
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 200,
+                decoration: BoxDecoration(
+                  image: DecorationImage(
+                    image: NetworkImage(data.image),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 20),
+              Text(
+                data.heading,
+                style:
+                    const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+              Text(
+                data.description,
+                style: const TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 30),
+              Text(
+                data.article,
+                style: TextStyle(fontSize: 16),
+              ),
+            ],
+          ),
         ),
       ),
     );

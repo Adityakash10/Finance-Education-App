@@ -6,10 +6,60 @@ class ChapterDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('What is Credit'),
-      ),
-      body: Padding(
+        appBar: AppBar(
+          title: Text('What is Credit'),
+        ),
+        body: Column(children: <Widget>[
+          // Header Section
+          Container(
+            padding: EdgeInsets.all(20.0),
+            color: Colors.blue, // Or use a specific shade of blue
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text(
+                  'Exploring Credit Scores',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                SizedBox(height: 8.0), // Add some spacing
+                Text(
+                  'A concept filled with multiple intricacies which will be uncovered',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
+
+          // Body Section
+          Expanded(
+            child: SingleChildScrollView(
+                // Allows scrolling if content is long
+                child: Container(
+                    padding: EdgeInsets.all(20.0),
+                    color: Colors.white,
+                    child: Text('sssssss'))),
+          )
+        ]));
+  }
+}
+
+
+
+
+
+
+
+
+
+      
+      /*body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -26,6 +76,4 @@ class ChapterDetailPage extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-}
+    );*/

@@ -1,0 +1,2 @@
+C:/Users/AIT 183/Desktop/athena-pro/Finance-Education-App/android/app/.cxx/Debug/2x6ykc62/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/AIT 183/Desktop/athena-pro/Finance-Education-App/android/app/.cxx/Debug/2x6ykc62/armeabi-v7a/CMakeFiles/rebuild_cache.dir

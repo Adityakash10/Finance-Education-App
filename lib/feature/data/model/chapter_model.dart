@@ -13,18 +13,6 @@ class Module {
   // quiz for each module
 }
 
-// class Quiz{
-//   final String name;
-//   final String image;
-//   final List<Question> questions;
-// }
-
-// class Question{
-//   final String title;
-//   final List<String> options;
-//   final int answer;
-// }
-
 class Chapter {
   final String name;
   final String image;

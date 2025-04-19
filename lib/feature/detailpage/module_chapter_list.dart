@@ -1,5 +1,6 @@
 import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
 import 'package:educational_finance_app_for_teens/feature/detailpage/chapter_detail.dart';
+import 'package:educational_finance_app_for_teens/feature/quiz/quiz_page.dart';
 import 'package:flutter/material.dart';
 
 class ModuleChapterListPage extends StatelessWidget {
@@ -28,16 +29,22 @@ class ModuleChapterListPage extends StatelessWidget {
             children: <Widget>[
               Text(
                 module.title,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 40.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: 30),
+              TextButton(
+                  onPressed: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => QuizScreen()));
+                  },
+                  child: Text('play quiz')),
+              const SizedBox(height: 30),
               ListView.separated(
                   itemCount: module.chapters.length,
                   shrinkWrap: true,
-                  physics: NeverScrollableScrollPhysics(),
+                  physics: const NeverScrollableScrollPhysics(),
                   separatorBuilder: (context, index) =>
                       const SizedBox(height: 15),
                   itemBuilder: (context, index) {

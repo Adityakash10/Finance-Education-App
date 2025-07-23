@@ -1,5 +1,5 @@
-import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
-import 'package:educational_finance_app_for_teens/feature/data/quiz/quiz_data.dart';
+import 'package:educational_finance_app_for_teens/data/model/chapter_model.dart';
+import 'package:educational_finance_app_for_teens/data/quiz/quiz_data.dart';
 
 List<Module> modules = [
   creditScoreModules,
@@ -112,6 +112,7 @@ final creditworthinessModule = Module(
   title: "Creditworthiness Improvement",
   description:
       "Let's learn how to improve a credit score and build good credit habits",
+  quiz: creditworthinessQuiz,
   chapters: [
     Chapter(
       name: "What is Creditworthiness?",
@@ -144,6 +145,7 @@ final valueSavingModules = Module(
   title: "Creditworthiness Improvement",
   description:
       "Let's learn how to improve a credit score and build good credit habits",
+  quiz: valueOfSavingsQuiz,
   chapters: [
     Chapter(
       name: "What is Creditworthiness?",
@@ -176,6 +178,7 @@ final buildingAninvestmentModule = Module(
   title: "Building an Investment Portfolio",
   description:
       "Let's learn how to set a budget, ways to enhance savings, tracking income and expenses",
+  quiz: buildingAnInvestmentQuiz,
   chapters: [
     Chapter(
       name: "Determine Asset Allocation",
@@ -225,6 +228,7 @@ final costOfLivingModule = Module(
   title: "Cost of living in college towns across the US",
   description:
       "Let's learn how a student's financial aid journey pans out during their undergraduate degree",
+  quiz: costOfLivingInCollegeQuiz,
   chapters: [
     Chapter(
       name: "Financial Aid & Scholarships",

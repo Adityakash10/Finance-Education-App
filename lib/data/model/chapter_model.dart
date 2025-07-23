@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:educational_finance_app_for_teens/feature/data/model/quiz_model.dart';
+import 'package:educational_finance_app_for_teens/data/model/quiz_model.dart';
 
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 class Module {

@@ -1,4 +1,4 @@
-import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
+import 'package:educational_finance_app_for_teens/data/model/chapter_model.dart';
 import 'package:flutter/material.dart';
 
 class ChapterDetailPage extends StatelessWidget {

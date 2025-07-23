@@ -1,4 +1,3 @@
-import 'package:educational_finance_app_for_teens/feature/data/chapterlist_data.dart';
 import 'package:educational_finance_app_for_teens/feature/data/module_data.dart';
 import 'package:educational_finance_app_for_teens/feature/detailpage/module_chapter_list.dart';
 import 'package:flutter/material.dart';
@@ -10,16 +9,16 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     List<Color> gridColor = [
       Colors.amber,
-      Color.fromARGB(255, 255, 69, 7),
-      Color.fromARGB(255, 7, 160, 255),
-      Color.fromARGB(255, 7, 255, 127),
-      Color.fromARGB(255, 168, 7, 255),
-      Color.fromARGB(255, 255, 152, 7),
+      const Color.fromARGB(255, 255, 69, 7),
+      const Color.fromARGB(255, 7, 160, 255),
+      const Color.fromARGB(255, 7, 255, 127),
+      const Color.fromARGB(255, 168, 7, 255),
+      const Color.fromARGB(255, 255, 152, 7),
     ];
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
-        title: Text(
+        title: const Text(
           "Courses",
           style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
         ),
@@ -53,15 +52,15 @@ class Homepage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                           color: gridColor[index],
                         ),
-                        padding: EdgeInsets.all(10),
+                        padding: const EdgeInsets.all(10),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(modules[index].title,
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontWeight: FontWeight.bold, fontSize: 20)),
                             Text(modules[index].description,
-                                style: TextStyle(fontSize: 15)),
+                                style: const TextStyle(fontSize: 15)),
                           ],
                         ),
                       ),

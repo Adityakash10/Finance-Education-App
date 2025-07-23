@@ -1,4 +1,5 @@
 import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
+import 'package:educational_finance_app_for_teens/feature/data/quiz/quiz_data.dart';
 
 List<Module> modules = [
   creditScoreModules,
@@ -12,6 +13,7 @@ List<Module> modules = [
 final creditScoreModules = Module(
   title: "Credit Score",
   description: "Learn the basics on borrowing",
+  quiz: creditCardQuiz,
   chapters: [
     Chapter(
       name: "What Is a Credit Score?",
@@ -65,6 +67,7 @@ final creditScoreModules = Module(
 final debtManagementModule = Module(
   title: "Debt Management",
   description: "Let's uncover types of debt and responsible debt management",
+  quiz: debtManagementQuiz,
   chapters: [
     Chapter(
       name: "Good Debt",

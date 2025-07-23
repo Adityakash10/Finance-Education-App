@@ -1,7 +1,3 @@
-import 'package:educational_finance_app_for_teens/feature/auth/pages/loginpage.dart';
-import 'package:educational_finance_app_for_teens/feature/auth/pages/signuppage.dart';
-import 'package:educational_finance_app_for_teens/feature/detailpage/module_chapter_list.dart';
-import 'package:educational_finance_app_for_teens/feature/detailpage/chapter_detail.dart';
 import 'package:educational_finance_app_for_teens/feature/home/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -17,10 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: Homepage());
+        home: const Homepage());
   }
 }

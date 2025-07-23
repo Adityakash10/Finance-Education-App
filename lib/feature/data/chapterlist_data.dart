@@ -1,5 +1,3 @@
-import 'package:educational_finance_app_for_teens/feature/data/model/chapter_model.dart';
-
 List<List<String>> chapters = [
   creditScoreChapters,
   debtManagementChapters,

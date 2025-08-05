@@ -29,28 +29,28 @@ class _ModuleChapterListPageState extends State<ModuleChapterListPage> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
-        leading: Container(
-          margin: const EdgeInsets.all(8),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(12),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.1),
-                blurRadius: 10,
-                offset: const Offset(0, 2),
-              ),
-            ],
-          ),
-          child: IconButton(
-            icon: const Icon(
-              Icons.arrow_back_ios_new,
-              color: Color(0xFF2D3748),
-              size: 20,
-            ),
-            onPressed: () => Navigator.pop(context),
-          ),
-        ),
+        // leading: Container(
+        //   margin: const EdgeInsets.all(8),
+        //   decoration: BoxDecoration(
+        //     color: Colors.white,
+        //     borderRadius: BorderRadius.circular(12),
+        //     boxShadow: [
+        //       BoxShadow(
+        //         color: Colors.black.withOpacity(0.1),
+        //         blurRadius: 10,
+        //         offset: const Offset(0, 2),
+        //       ),
+        //     ],
+        //   ),
+        //   child: IconButton(
+        //     icon: const Icon(
+        //       Icons.arrow_back_ios_new,
+        //       color: Color(0xFF2D3748),
+        //       size: 20,
+        //     ),
+        //     onPressed: () => Navigator.pop(context),
+        //   ),
+        // ),
       ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
@@ -107,7 +107,8 @@ class _ModuleChapterListPageState extends State<ModuleChapterListPage> {
             ),
 
             // Quiz Widget Section
-            if (widget.module.quiz != null)
+            if (widget.module.quiz != null &&
+                widget.module.quiz!.questions.isNotEmpty)
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 24),
                 child: Container(

@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <application
-        android:label="educational_finance_app_for_teens"
+        android:label="Wealth Wise"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

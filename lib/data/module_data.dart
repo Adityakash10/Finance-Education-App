@@ -28,7 +28,8 @@ final creditScoreModules = Module(
     ),
     Chapter(
       name: "Why Is a Credit Score Important?",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://us1.discourse-cdn.com/flex020/uploads/jupiter/optimized/3X/8/7/87b341b78a09a38f983124a132f29fdc4b49f284_2_690x459.jpeg",
       heading: "Importance of Credit Score",
       description:
           "Understand how credit scores impact loan approvals and interest rates.",
@@ -39,7 +40,8 @@ final creditScoreModules = Module(
     ),
     Chapter(
       name: "What Factors Affect Your Credit Score?",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://us1.discourse-cdn.com/flex020/uploads/jupiter/optimized/3X/8/7/87b341b78a09a38f983124a132f29fdc4b49f284_2_690x459.jpeg",
       heading: "Factors That Affect Credit Score",
       description:
           "Explore the five major elements that determine your credit score.",
@@ -52,7 +54,8 @@ final creditScoreModules = Module(
     ),
     Chapter(
       name: "Credit Score Ranges",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://us1.discourse-cdn.com/flex020/uploads/jupiter/optimized/3X/8/7/87b341b78a09a38f983124a132f29fdc4b49f284_2_690x459.jpeg",
       heading: "Credit Score Tiers",
       description: "Breakdown of different credit score categories.",
       article: "• Excellent (800-850)\n"
@@ -72,7 +75,7 @@ final debtManagementModule = Module(
     Chapter(
       name: "Good Debt",
       image:
-          "https://via.placeholder.com/150", // Replace with a relevant image if desired
+          "https://wallstreetmojocms.recurpro.in/uploads/debt_management_4115058668.png",
       heading: "Understanding Good Debt",
       description:
           "Learn about types of debt that can benefit your financial future.",
@@ -84,7 +87,8 @@ final debtManagementModule = Module(
     ),
     Chapter(
       name: "Bad Debt",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://wallstreetmojocms.recurpro.in/uploads/debt_management_4115058668.png",
       heading: "Understanding Bad Debt",
       description:
           "Explore types of debt that reduce your wealth and financial stability.",
@@ -96,7 +100,8 @@ final debtManagementModule = Module(
     ),
     Chapter(
       name: "How to Manage Debt",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://wallstreetmojocms.recurpro.in/uploads/debt_management_4115058668.png",
       heading: "Debt Management Tips",
       description: "Learn practical strategies to take control of your debt.",
       article: "• Create a Budget\n"
@@ -116,7 +121,9 @@ final creditworthinessModule = Module(
   chapters: [
     Chapter(
       name: "What is Creditworthiness?",
-      image: "https://via.placeholder.com/150", // Replace with a relevant image
+      image:
+          "https://s3-ap-south-1.amazonaws.com/oasys-image/public/images/What-is-Credit-Worthiness-bann-freed_website.png", // Replace with a relevant image
+
       heading: "Understanding Creditworthiness",
       description:
           "Learn what creditworthiness means and why it matters to lenders.",
@@ -126,7 +133,9 @@ final creditworthinessModule = Module(
     ),
     Chapter(
       name: "Improving Creditworthiness",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://s3-ap-south-1.amazonaws.com/oasys-image/public/images/What-is-Credit-Worthiness-bann-freed_website.png", // Replace with a relevant image
+
       heading: "How to Improve Creditworthiness",
       description:
           "Discover key habits to build strong credit and improve your financial trustworthiness.",
@@ -142,34 +151,48 @@ final creditworthinessModule = Module(
 );
 
 final valueSavingModules = Module(
-  title: "Creditworthiness Improvement",
+  title: "Value of Savings and Budgeting",
   description:
       "Let's learn how to improve a credit score and build good credit habits",
   quiz: valueOfSavingsQuiz,
   chapters: [
     Chapter(
-      name: "What is Creditworthiness?",
-      image: "https://via.placeholder.com/150", // Replace with a relevant image
-      heading: "Understanding Creditworthiness",
+      name: "How to Set a Budget",
+      image:
+          "https://www.indusind.com/iblogs/wp-content/uploads/What-Is-Budgeting-Taking-Control-of-Your-Own-Finances.jpg", // Budget planning image
+      heading: "Steps to Setting a Budget",
       description:
-          "Learn what creditworthiness means and why it matters to lenders.",
+          "Learn how to organize your income and expenses to create a practical budget.",
       article:
-          "Creditworthiness is a measure of how likely you are to repay a loan or credit card balance based on your credit history and score. "
-          "It tells lenders how risky it is to lend you money.",
+          "• Add Up All Your Income: Calculate all sources of income, including wages, salaries, investments, and any other earnings.\n"
+          "• List Your Fixed and Variable Expenses: Track essential expenses.\n"
+          "• Include Debt Payments.\n"
+          "• Create a Spending Plan.\n"
+          "• Set Financial Goals.\n"
+          "• Review and Adjust: Regularly assess your budget to ensure it aligns with your goals and adjust as necessary.",
     ),
     Chapter(
-      name: "Improving Creditworthiness",
-      image: "https://via.placeholder.com/150",
-      heading: "How to Improve Creditworthiness",
+      name: "Enhance Savings",
+      image:
+          "https://www.indusind.com/iblogs/wp-content/uploads/What-Is-Budgeting-Taking-Control-of-Your-Own-Finances.jpg", // Savings jar image
+      heading: "Strategies to Boost Savings",
       description:
-          "Discover key habits to build strong credit and improve your financial trustworthiness.",
-      article: "• Pay Bills on Time\n"
-          "• Keep Credit Utilization Low\n"
-          "• Pay More Than the Minimum\n"
-          "• Check Your Credit Reports Regularly\n"
-          "• Avoid Opening Too Many New Accounts\n"
-          "• Diversify Your Credit Types\n"
-          "• Keep Track of Your Credit Score",
+          "Discover effective ways to save money and secure your financial future.",
+      article: "• Pay Yourself First: Create a 401k to save for retirement.\n"
+          "• Build an Emergency Fund: Aim to save 3–6 months worth of expenses to protect yourself from unexpected financial setbacks.\n"
+          "• Cut Back on Unnecessary Spending.\n"
+          "• Maximize Retirement Contributions: Contribute to retirement accounts like 401(k)s.",
+    ),
+    Chapter(
+      name: "Tracking Income and Expenses",
+      image:
+          "https://www.indusind.com/iblogs/wp-content/uploads/What-Is-Budgeting-Taking-Control-of-Your-Own-Finances.jpg", // Expense tracking image
+      heading: "Monitoring Your Finances",
+      description:
+          "Learn tools and methods to track your income and expenses effectively.",
+      article: "• Use Budgeting Tools.\n"
+          "• Review Monthly Statements.\n"
+          "• Monitor Spending.",
     ),
   ],
 );
@@ -182,7 +205,8 @@ final buildingAninvestmentModule = Module(
   chapters: [
     Chapter(
       name: "Determine Asset Allocation",
-      image: "https://via.placeholder.com/150", // Replace with a relevant image
+      image:
+          "https://av.sc.com/in/content/images/in-building-portfolio-from-scratch-1600x490.jpg", // Replace with a relevant image
       heading: "Set Goals and Balance Risk",
       description:
           "Learn how to assess your financial goals and risk tolerance to create a solid foundation.",
@@ -194,7 +218,9 @@ final buildingAninvestmentModule = Module(
     ),
     Chapter(
       name: "Choose Your Assets",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://av.sc.com/in/content/images/in-building-portfolio-from-scratch-1600x490.jpg", // Replace with a relevant image
+
       heading: "Explore Investment Options",
       description:
           "Understand the different types of assets you can invest in.",
@@ -207,7 +233,9 @@ final buildingAninvestmentModule = Module(
     ),
     Chapter(
       name: "Diversification",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://av.sc.com/in/content/images/in-building-portfolio-from-scratch-1600x490.jpg", // Replace with a relevant image
+
       heading: "Reduce Risk Through Diversification",
       description:
           "Learn how spreading your investments can protect your portfolio.",
@@ -232,13 +260,14 @@ final costOfLivingModule = Module(
   chapters: [
     Chapter(
       name: "Financial Aid & Scholarships",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjqBqnRMgWKpdLvPV8kQTsVtcFSYtAV1Bmg&s",
       heading: "Types of Financial Aid",
       description:
           "Grants, scholarships, loans, and work-study programs explained.",
       article:
           "Understanding how financial aid works is essential for budgeting your college years.\n\n"
-          "- **Grants**: Often need-based and don’t need to be repaid.\n"
+          "- **Grants**: Often need-based and don't need to be repaid.\n"
           "- **Scholarships**: Typically merit-based and also do not require repayment.\n"
           "- **Loans**: Must be paid back with interest. These can be federal or private.\n"
           "- **Work-study**: A federal program that helps students earn money through part-time jobs.\n\n"
@@ -246,19 +275,21 @@ final costOfLivingModule = Module(
     ),
     Chapter(
       name: "Emergency Funds and Insurance Basics",
-      image: "https://via.placeholder.com/150",
-      heading: "Preparing for Life’s Surprises",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjqBqnRMgWKpdLvPV8kQTsVtcFSYtAV1Bmg&s",
+      heading: "Preparing for Life's Surprises",
       description:
           "Learn how to set aside money for emergencies and understand basic insurance.",
       article:
           "An emergency fund is a vital part of financial planning. It helps cover unexpected expenses like medical emergencies or car repairs without derailing your budget.\n\n"
-          "- Aim for 3–6 months of living expenses in a liquid savings account.\n"
+          "- Aim for 3-6 months of living expenses in a liquid savings account.\n"
           "- Understand insurance options for health, renters, and auto to reduce financial risk.\n\n"
           "More info: https://www.investopedia.com/personal-finance/how-to-build-emergency-fund/",
     ),
     Chapter(
       name: "Taxes",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjqBqnRMgWKpdLvPV8kQTsVtcFSYtAV1Bmg&s",
       heading: "Tax Tips for Students",
       description:
           "Student loan interest deduction, education credits, and more.",
@@ -271,7 +302,8 @@ final costOfLivingModule = Module(
     ),
     Chapter(
       name: "Side Hustles",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjqBqnRMgWKpdLvPV8kQTsVtcFSYtAV1Bmg&s",
       heading: "Make Extra Money During College",
       description: "Learn how to manage money from gigs and freelance jobs.",
       article:
@@ -284,14 +316,15 @@ final costOfLivingModule = Module(
     ),
     Chapter(
       name: "Retirement Savings",
-      image: "https://via.placeholder.com/150",
+      image:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkjqBqnRMgWKpdLvPV8kQTsVtcFSYtAV1Bmg&s",
       heading: "Start Saving Early",
       description:
           "Learn about retirement accounts and the benefits of starting in your 20s.",
-      article: "It’s never too early to start planning for retirement:\n\n"
+      article: "It's never too early to start planning for retirement:\n\n"
           "- **IRAs** and **401(k)s** are tax-advantaged accounts.\n"
           "- The earlier you start, the more compound interest works in your favor.\n"
-          "- Many employers match contributions to 401(k)s—don’t miss out!\n\n"
+          "- Many employers match contributions to 401(k)s—don't miss out!\n\n"
           "More info: https://www.investopedia.com/articles/retirement/05/061305.asp",
     ),
   ],

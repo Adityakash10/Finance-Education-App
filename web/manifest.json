@@ -1,11 +1,11 @@
 {
-    "name": "educational_finance_app_for_teens",
-    "short_name": "educational_finance_app_for_teens",
+    "name": "Wealth Wise",
+    "short_name": "WealthWise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "Educational Finance App for Teens",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

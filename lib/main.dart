@@ -1,3 +1,4 @@
+import 'package:educational_finance_app_for_teens/analytics.dart';
 import 'package:educational_finance_app_for_teens/feature/home/pages/homepage.dart';
 import 'package:flutter/material.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        navigatorObservers: [AnalyticsRouteObserver()],
         title: 'WealthWise',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(

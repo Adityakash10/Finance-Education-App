@@ -2,19 +2,19 @@
 <html>
 
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8HRVW8PGN7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+    // Basic config (auto page_view on first load)
+    gtag('config', 'G-8HRVW8PGN7', {
+      send_page_view: true
+      // , anonymize_ip: true  // optional privacy
+    });
+  </script>
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="$FLUTTER_BASE_HREF">
 
   <meta charset="UTF-8">

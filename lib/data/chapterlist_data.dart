@@ -5,24 +5,26 @@ List<List<String>> chapters = [
   valueOfSavingsChapters,
   buildingAninvestmentChapters,
   costofLivingInCollegeChapters,
+  budgetingBasicsChapters,
 ];
 
 List<String> creditScoreChapters = [
-  'What Is a Credit Score?',
-  'Why Is a Credit Score Important?',
-  "What Factors Affect Credit Score?"
+  'Understanding the Credit Score',
+  'The Building Blocks of Your Score',
+  'Raising Your Score and Moving Forward',
 ];
 
 List<String> debtManagementChapters = [
-  'Good Debt',
-  'Bad Debt',
-  "How to Manage Debt",
+  'The Hidden Costs of Minimum Payments and High-Interest Debt',
+  'Strategic Approaches to Paying Off Debt',
+  'The Responsibilities of Debt Beyond Your Own',
+  'The Consequences of Not Taking Action',
 ];
 
 List<String> creditworthiness = [
-  'Creditworthiness',
-  'Pay Bills on Time',
-  'Check Credit Reports',
+  'Laying the Groundwork for Credit Growth',
+  'Repairing, Refining, and Protecting Credit Health',
+  'Strengthening Credit Through Strategy and Longevity',
 ];
 
 List<String> valueOfSavingsChapters = [
@@ -31,14 +33,22 @@ List<String> valueOfSavingsChapters = [
   'Tracking Income and Expenses',
 ];
 List<String> buildingAninvestmentChapters = [
-  'Building an Investment Portfolio',
-  'Choose Your Assets',
-  "Diversification",
+  'Laying the Groundwork – Understanding Risk and Strategy',
+  'Tools of the Trade – Funds, Rebalancing, and Emergency Readiness',
+  'Matching Investments to Goals – Time Horizons and Priorities',
+  'Staying the Course – Discipline, Fees, and a Long-Term Mindset',
 ];
 List<String> costofLivingInCollegeChapters = [
-  'Financial Aid & Scholarships',
-  'Emergency Funds and Insurance Basics',
-  "Side Hustles",
+  'The Weight of Rent and Everyday Expenses',
+  'Making Financial Aid and Employment Work',
+  'Long-Term Budgeting and Smart Choices',
+];
+
+List<String> budgetingBasicsChapters = [
+  'Laying the Foundation — Understanding Your Financial Picture',
+  'Preparing for the Unexpected — The Role of Emergency Funds and Spending Awareness',
+  'Staying Goal-Oriented — Making Savings and Lifestyle Choices Work for You',
+  'Tools, Flexibility, and Long-Term Success',
 ];
 
   // List<String> titles = [

@@ -13,13 +13,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        navigatorObservers: [AnalyticsRouteObserver()],
-        title: 'WealthWise',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        home: const Homepage());
+      // navigatorObservers: [
+      //   AnalyticsRouteObserver(),
+      // ],
+      title: 'WealthWise',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      home: const Homepage(),
+    );
   }
 }

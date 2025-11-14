@@ -5,7 +5,7 @@ List<Module> modules = [
   creditScoreModules,
   debtManagementModule,
   creditworthinessModule,
-  valueSavingModules,
+  // valueSavingModules,
   buildingAninvestmentModule,
   costOfLivingModule,
   budgetingBasicsModule,

@@ -1,5 +1,6 @@
 import 'package:educational_finance_app_for_teens/data/module_data.dart';
 import 'package:educational_finance_app_for_teens/feature/detailpage/module_chapter_list.dart';
+import 'package:educational_finance_app_for_teens/feature/chat/pages/chat_page.dart';
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
@@ -186,6 +187,27 @@ class Homepage extends StatelessWidget {
             ),
             const SizedBox(height: 20),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton.extended(
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const ChatPage(),
+            ),
+          );
+        },
+        backgroundColor: const Color(0xFF6366F1),
+        foregroundColor: Colors.white,
+        elevation: 8,
+        icon: const Icon(Icons.chat, size: 20),
+        label: const Text(
+          "Ask AI",
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 14,
+          ),
         ),
       ),
     );

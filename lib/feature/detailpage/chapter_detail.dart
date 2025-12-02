@@ -24,7 +24,9 @@ class ChapterDetailPage extends StatelessWidget {
       body: SingleChildScrollView(
         // Use more horizontal padding for better readability
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 16.0),
+          padding: MediaQuery.of(context).size.width > 1000
+              ? const EdgeInsets.symmetric(horizontal: 300.0, vertical: 16.0)
+              : const EdgeInsets.symmetric(horizontal: 20.0, vertical: 16.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
